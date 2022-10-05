@@ -1,6 +1,7 @@
 # Введение в JavaScript
 
 [Это база](https://learn.javascript.ru/first-steps)
+
 [Взаимодействие с DOM](https://developer.mozilla.org/ru/docs/Web/API/Document_Object_Model/Introduction)
 
 
