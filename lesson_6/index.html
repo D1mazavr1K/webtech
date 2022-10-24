@@ -9,10 +9,10 @@
     <title>Document</title>
 </head>
 <body>
-<form name="myForm" method="post" onsubmit="return validateForm()">
+<form name="myForm" id="myForm" method="POST" onsubmit="return validateForm();">
     <div class="form-group">
         <label for="name">Имя</label>
-        <label class="form-error">Введите имя!</label>
+        <label class="form-error" id="name_error">Введите имя!</label>
         <input type="text" name="name" id="name">
     </div>
     <div class="form-group">
@@ -45,8 +45,8 @@
     <div class="form-group">
         <label for="opt">Какой-нибудь селект</label>
         <select name="opt" id="opt">
-            <option selected>opt 1</option>
-            <option>opt 2</option>
+            <option>opt 1</option>
+            <option selected>opt 2</option>
             <option>opt 3</option>
         </select>
     </div>
