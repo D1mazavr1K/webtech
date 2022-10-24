@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 760px;
+    padding: 10px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex .form-group {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.d-flex .form-group  label{
+    display: flex;
+    align-items: center;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+}
+
+input:focus, select:focus {
+    background-color: lightblue;
+}
+
+button[type=submit] {
+    margin-top: 10px;
+    padding: 10px 5px;
+}
+
+.form-error {
+    color: red;
+    font-size: 14px;
+    display: block;
+    display: none;
+}
