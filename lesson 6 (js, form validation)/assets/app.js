@@ -1,11 +1,17 @@
-function validateForm(){
+function validateForm() {
     console.log('success prevent default submit')
-    let name = document.forms["myForm"]["name"].value
-    console.log(name)
 
+    let name = document.forms['myForm']['name'].value
+    console.log(name)
     if (!name) {
-        alert('Введите имя')
+        // document.getElementById('name_error').style.display = 'block'
     }
+    let email = document.forms['myForm']['email'].value
+    console.log(validateEmail(email))
+
+    /*
+    дальнейшую часть работы вам предстоит проделать самостоятельно :)
+     */
 
     let request = new XMLHttpRequest
     request.open('POST', './assets/server.php')
@@ -21,4 +27,13 @@ function validateForm(){
             }
     }
     return false;
+}
+
+document.getElementById('myForm').onsubmit = () => {
+    return validateForm()
+}
+
+validateEmail = (email) => {
+    let re = /\S+@\S+\.\S+/
+    return re.test(email)
 }

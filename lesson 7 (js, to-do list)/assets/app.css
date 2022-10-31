@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 930px;
+    margin: 50px auto 25px;
+}
+
+.addTODO {
+    display: flex;
+}
+
+.addTODO > div {
+    width: 75%;
+}
+
+.addTODO > div + div {
+    width: 25%;
+}
+
+input[type=text], input[type=button] {
+    width: 100%;
+    display: block;
+    padding: 20px 10px;
+    font-size: 24px;
+}
+
+.checkedTodo {
+    text-decoration: line-through;
+}
