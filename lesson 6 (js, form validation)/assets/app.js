@@ -7,7 +7,7 @@ function validateForm() {
         // document.getElementById('name_error').style.display = 'block'
     }
     let email = document.forms['myForm']['email'].value
-    console.log(validateEmail(email))
+    console.log(validateEmail(email) )
 
     /*
     дальнейшую часть работы вам предстоит проделать самостоятельно :)
@@ -33,7 +33,7 @@ document.getElementById('myForm').onsubmit = () => {
     return validateForm()
 }
 
-validateEmail = (email) => {
+function validateEmail(email) {
     let re = /\S+@\S+\.\S+/
     return re.test(email)
 }
