@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-width: 930px;
+    margin: 50px auto 25px;
+}
+
+.addTODO {
+    display: flex;
+}
+
+.addTODO > div {
+    width: 75%;
+}
+
+.addTODO > div + div {
+    width: 25%;
+}
+
+input[type=text], input[type=button] {
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 24px;
+}
+
+.item {
+    margin: 10px 0 10px;
+    padding: 20px 10px;
+    font-size: 24px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+.item input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+}
+
+.checkedTOdo {
+    opacity: 0.25;
+}
+
+.item_icon {
+    width: 24px;
+    height: 24px;
+    float: right;
+}
+
+.item_icon:hover {
+    cursor: pointer;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}

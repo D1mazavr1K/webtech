@@ -1,10 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-$END$
+<header>todo list</header>
+<main>
+    <div class="addTODO">
+        <div><input type="text" id="addTitle"></div>
+        <select id="addPrior">
+            <option class="yellow" value="1">желтый</option>
+            <option class="red" value="2">красный</option>
+        </select>
+        <div><input type="button" value="Добавить" id="addBtn"></div>
+    </div>
+    <div class="TODO"></div>
+</main>
+<script src="app.js"></script>
 </body>
 </html>
