@@ -16,6 +16,11 @@
     <div>
       <input type="text" id="addTitle">
     </div>
+    <select>
+      <option value="1" class="green"></option>
+      <option value="2" class="blue"></option>
+      <option value="3" class="red"></option>
+    </select>
     <div>
       <input type="button" value="Добавить" id="addBtn">
     </div>
@@ -23,10 +28,6 @@
   <div class="TODO">
   </div>
 </main>
-
-<footer>
-  <p>Smirnov Dmitriy, Copyright ©2022</p>
-</footer>
 </body>
 <script src="assets/app.js"></script>
 </html>
